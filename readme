@@ -1,0 +1,13 @@
+IMAGE TO TEXT USING OPTICAL CHARACTER RECOGNITION
+
+
+This code demonstrates the use of EasyOCR for Optical Character Recognition on an image file. It begins by installing and importing the EasyOCR library, then creates a Reader instance for English text. The script processes an image file ('sample.jpeg') to extract text, storing the results in a list. It then organizes this extracted text into a structured dictionary, assuming that uppercase lines are headings and subsequent lowercase lines are related items. The code iterates through each line, creating new dictionary entries for headings and appending related items as list values under these headings. This approach is particularly useful for processing images with hierarchical text information, such as lists of hormone types grouped under categories. The final output is a dictionary where keys are the headings (assumed to be in uppercase) and values are lists of related items, providing an organized representation of the text extracted from the image.
+
+
+
+OUTPUT:
+easyocr.easyocr:Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+WARNING:easyocr.easyocr:Downloading detection model, please wait. This may take several minutes depending upon your network connection.
+Progress: |██████████████████████████████████████████████████| 100.0% CompleteWARNING:easyocr.easyocr:Downloading recognition model, please wait. This may take several minutes depending upon your network connection.
+Progress: |██████████████████████████████████████████████████| 100.0% Complete{'GLANDS AND ORGANS': {'Pineal': ['TRH,', 'CRH,', 'GHRH'], 'Vasopressin': ['PTH'], 'Parathyroid': ['T3', 'T4,'], 'Thymopoietin': ['IGF;,', 'THPO'], 'Neuropeptide': ['Y']}}
+
